@@ -164,12 +164,12 @@ Where `console.log` leaves us a little evidence about what's going on in the pro
 It then lets you walk through your script step by step.
 
 ```js
-const greeting = "Hello"
-const subject = "World"
+let greeting = "Hello"
+let subject = "World"
 debugger;
-const message = `${greeting}, ${subject}!`
+let message = `${greeting}, ${subject}!`
 console.log(message)
-const messageParts = message.split(", ")
+let messageParts = message.split(", ")
 ```
 
 We don't actually need to have a `debugger` line and StandardJS doesn't like it.
