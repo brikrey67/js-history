@@ -183,3 +183,5 @@ Much more information on debugging with Chrome Dev Tools is available [here](htt
 - [W3C: A Short History of JavaScript](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)
 - [Auth0: A Brief History of JavaScript](https://auth0.com/blog/a-brief-history-of-javascript/)
 - [Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Standard JS](https://standardjs.com/)
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
