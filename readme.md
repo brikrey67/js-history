@@ -104,7 +104,7 @@ You can bring up the Development Tools (DevTools) with the command **Command + C
 
 ![DevTools Console says 'Hello World!'](https://user-images.githubusercontent.com/7882341/27314092-830ea8ac-553f-11e7-954f-c8502b382d6d.png)
 
-### Linking multiple scripts
+### Linking multiple scripts (5 minutes / 0:35)
 
 Again, back at the command line run:
 ```bash
@@ -127,21 +127,6 @@ Go back to the browser and refresh the page.
 
 **Bonus** [async and deferred attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
-## Linter (10 minutes / 0:35)
-
-- Install [Linter](https://github.com/steelbrain/linter)
-- Install [linter-js-standard](https://github.com/ricardofbarros/linter-js-standard)
-- Install [atom-standard-formatter](https://github.com/stephenkubovic/atom-standard-formatter)
-- Install [standardjs-snippets](https://github.com/gaboesquivel/atom-standardjs-snippets)
-
-The errors we get in the linter might be confusing at first.
-There is a standard list of rules [here](https://standardjs.com/rules.html).
-The errors for the most part should be understandable plain English but if the meaning of an error isn't clear, google "Standard JS [Error Message Here]".
-
-To use the formatter press `ctrl-alt-f` and the formatter will correct any errors it can in your file.
-
-Why do we want a linter?
-
 ## Developer Tools (10 minutes / 0:45)
 
 ### `console.log`
@@ -157,7 +142,7 @@ console.log(`The random number is ${randomNum}`)
 
 ```
 
-### `debugger`
+### `debugger` (5 minutes / 0:50)
 
 `debugger` is like a super powered `console.log`.
 Where `console.log` leaves us a little evidence about what's going on in the program execution, debugger puts the process on hold and lets us look at any part of the paused process.
@@ -177,6 +162,19 @@ We don't actually need to have a `debugger` line and StandardJS doesn't like it.
 Instead we can set breakpoints directly through the developer tools.
 
 Much more information on debugging with Chrome Dev Tools is available [here](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+
+## Linter (Optional)
+
+- Install [Linter](https://github.com/steelbrain/linter)
+- Install [linter-js-standard](https://github.com/ricardofbarros/linter-js-standard)
+- Install [atom-standard-formatter](https://github.com/stephenkubovic/atom-standard-formatter)
+- Install [standardjs-snippets](https://github.com/gaboesquivel/atom-standardjs-snippets)
+
+The errors we get in the linter might be confusing at first.
+There is a standard list of rules [here](https://standardjs.com/rules.html).
+The errors for the most part should be understandable plain English but if the meaning of an error isn't clear, google "Standard JS [Error Message Here]".
+
+To use the formatter press `ctrl-alt-f` and the formatter will correct any errors it can in your file.
 
 ## References
 
