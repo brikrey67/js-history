@@ -10,7 +10,7 @@ CSS is a **stylesheet language**, a language to describe rules for the presentat
 While there is a lot of depth to CSS it is ultimately focused on the document which is limiting.
 
 A program is a collection of instructions that preforms a task when executed by a computer.
-This task can be editing digital video, running a game, transfering money between bank accounts, operating a robot in a factory, mining data, firing missiles, presenting a web application, or simply printing some lines to a console.
+This task can be editing digital video, running a game, transferring money between bank accounts, operating a robot in a factory, mining data, firing missiles, presenting a web application, or simply printing some lines to a console.
 There are many programming languages and they could all do all of these things, but some better than others.
 
 Programing languages generally share several features such as **data types**, **variables**, **logic**, **control flow**, and **functions** that allow them to express any conceivable procedure.
@@ -24,17 +24,17 @@ We use JavaScript when building web apps because it is the only language that ru
 ## The Turbulent History of JavaScript (10 minutes / 0:25)
 
 ![Browser Market Share 1994-2009](https://upload.wikimedia.org/wikipedia/commons/5/55/Layout_engine_usage_share-2009-01-07.svg)
-- **1993**: National Center for Supercomputing Applications (NCSA) of the University of Illinois at Ubrana-Champaign release [NCSA Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)) popularizng the web.
+- **1993**: National Center for Supercomputing Applications (NCSA) of the University of Illinois at Urbana-Champaign release [NCSA Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)) popularizing the web.
 - **early 1994**: Mosaic Communications founded and begins work on Mosaic Netscape (internally, Mozilla)
 - **late 1994**: Mosaic Netscape released and quickly dominates web browser market
 - **early 1995**: Mosaic Communications is renamed Netscape Communications and Mosaic Netscape is renamed Netscape Navigator.
   - Microsoft is making large investment in web browsers and is challenging Netscape.
-  - As browser competition intensifies, Netscape founder, Marc Andreessen, beleives there is a need for a light weight language marketed to web designers that could be embedded directly in web pages.
-    - Brennan Eich is hired to write "Scheme for the web".
-    - Simultaneously, Netsape is working with Sun Microsystems to build Java extensibility into the browser leading to the decision that this new language should mimic Java to an extent.
-    - Brennan Eich prototypes the language then called Mocha in ten days.
+  - As browser competition intensifies, Netscape founder, Marc Andreessen, believes there is a need for a light weight language marketed to web designers that could be embedded directly in web pages.
+    - Brendan Eich is hired to write "Scheme for the web".
+    - Simultaneously, Netscape is working with Sun Microsystems to build Java extensibility into the browser leading to the decision that this new language should mimic Java to an extent.
+    - Brendan Eich prototypes the language then called Mocha in ten days.
 - **late 1995**: Mocha is released as a supported feature of the Netscape Browser under the name LiveScript
-  - In the subsequent release of the Netscape Browser, LiveScript is regretably renamed JavaScript in an effort to ride the coat tails of the heavily marketed Java.
+  - In the subsequent release of the Netscape Browser, LiveScript is regrettably renamed JavaScript in an effort to ride the coat tails of the heavily marketed Java.
 - **1996**: Microsoft reverse engineers JavaScript and releases JScript.
   - Netscape submits JavaScript to Ecma International to publish a standard (ECMAScript-262)
 - **1998**: Netscape open-sources their browser and creates the Mozilla Project.
@@ -43,7 +43,7 @@ We use JavaScript when building web apps because it is the only language that ru
 - **2003**: ECMAScript 4 falls apart.
   - Apple releases Safari.
 - **2005-2009**: Lots of excitement but things keep falling apart.
-  - Open source community works to address failings of the standards comittees
+  - Open source community works to address failings of the standards committees
   - ECMAScript 5 released
 - **2008** Chrome released
 - **2009** Node.js released
@@ -53,10 +53,10 @@ We use JavaScript when building web apps because it is the only language that ru
 ![Browser Market Share 2009-2015](https://upload.wikimedia.org/wikipedia/commons/8/86/Usage_share_of_web_browsers_%28Source_StatCounter%29.svg)
 
 - This turbulent history has resulted in some of the more interesting features of JavaScript including:
-  - The thriving open source community with extemely powerful tools (jQuery, Express, React, Babel etc).
+  - The thriving open source community with extremely powerful tools (jQuery, Express, React, Babel etc).
   - Extremely powerful runtimes as a result of competition between browser makers.
   - Language details that seem odd (`==` and `===`).
-  - Occasional browser inconsitencies.
+  - Occasional browser inconsistencies.
   - Ambiguous syntax
 
 Note: Check out [Can I Use..](https://caniuse.com/) for detailed info on browser support of JS features.
@@ -125,7 +125,7 @@ In index.html, in the head after the other script tag, add:
 
 Go back to the browser and refresh the page.
 
-**Bonus** [async and defered attriutes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
+**Bonus** [async and deferred attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 ## Linter (10 minutes / 0:35)
 
