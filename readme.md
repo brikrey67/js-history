@@ -135,10 +135,30 @@ We have seen `console.log` frequently in the pre-work and we will see it much mo
 The most difficult aspect of programming is not having insight into the exact value of things in a running program.
 `console.log` provides us this insight.
 
+This console is also known as a REPL.
+
+![REPL 42](https://user-images.githubusercontent.com/7882341/27314489-4275c7b4-5542-11e7-8c16-6b6431f9cc42.png)
+
+This is a REPL.
+When you hit **Enter**, you tell the computer:
+
+1. **R**ead the JavaScript I just wrote (`42`).
+2. **E**valuate it (calculate its value, `42`).
+3. **P**rint the value that was evaluated (`42`).
+4. **L**oop, returning control to the user and wait to be asked to read the next line.
+
 ```js
 const randomNum = Math.floor(Math.random() * 10)
 
 console.log(`The random number is ${randomNum}`)
+
+```
+
+```Arithmetic Operations
+  + : Addition
+  – : Subtraction
+  * : Multiplication
+  / : Division
 
 ```
 
