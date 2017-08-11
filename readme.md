@@ -154,13 +154,23 @@ console.log(`The random number is ${randomNum}`)
 
 ```
 
-```Arithmetic Operations
+```
+Arithmetic Operations
   + : Addition
   – : Subtraction
   * : Multiplication
   / : Division
-
 ```
+
+#### Exercise
+
+1. Print out your name in the console.
+2. Print out the sum of 1 to 10.
+3. Type in the following code and explain how it works:
+```
+  console.log("I'm a " + "programmer");
+```
+4. Print whatever you want in the console. Tip: if you want to write multiline command, use Shift + Enter to change line.
 
 ### `debugger` (5 minutes / 0:50)
 
