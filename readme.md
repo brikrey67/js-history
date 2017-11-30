@@ -25,12 +25,12 @@ We use JavaScript when building web apps because it is the only language that ru
 
 ![Browser Market Share 1994-2009](https://upload.wikimedia.org/wikipedia/commons/5/55/Layout_engine_usage_share-2009-01-07.svg)
 - **1993**: National Center for Supercomputing Applications (NCSA) of the University of Illinois at Urbana-Champaign release [NCSA Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)) popularizing the web.
-- **early 1994**: Mosaic Communications founded and begins work on Mosaic Netscape (internally, Mozilla)
+- **early 1994**: Mosaic Communications founded and begins work on Mosaic Netscape (internally codenamed, '*Mozilla*')
 - **late 1994**: Mosaic Netscape released and quickly dominates web browser market
 - **early 1995**: Mosaic Communications is renamed Netscape Communications and Mosaic Netscape is renamed Netscape Navigator.
   - Microsoft is making large investment in web browsers and is challenging Netscape.
-  - As browser competition intensifies, Netscape founder, Marc Andreessen, believes there is a need for a light weight language marketed to web designers that could be embedded directly in web pages.
-    - Brendan Eich is hired to write "Scheme for the web".
+  - As browser competition intensifies, Netscape founder, Marc Andreessen, believes there is a need for a light-weight language marketed to web designers that could be embedded directly in web pages.
+    - Brendan Eich is hired to write a prototype of a scripting language, that was intended to be a companion to Java, but would imitate the functional programming language Scheme (based on LISP)
     - Simultaneously, Netscape is working with Sun Microsystems to build Java extensibility into the browser leading to the decision that this new language should mimic Java to an extent.
     - Brendan Eich prototypes the language then called Mocha in ten days.
 - **late 1995**: Mocha is released as a supported feature of the Netscape Browser under the name LiveScript
@@ -46,170 +46,36 @@ We use JavaScript when building web apps because it is the only language that ru
   - Open source community works to address failings of the standards committees
   - ECMAScript 5 released
 - **2008** Chrome released
-- **2009** Node.js released
+- **2009** Node.js released Server-side JavaScript
 - **2015**: Change the naming convention to ECMAScript 2015 (commonly ES6)
 - **2016**: ECMAScript 2017 released but not such a big deal because people had be using Babel.
 
 ![Browser Market Share 2009-2015](https://upload.wikimedia.org/wikipedia/commons/8/86/Usage_share_of_web_browsers_%28Source_StatCounter%29.svg)
 
-- This turbulent history has resulted in some of the more interesting features of JavaScript including:
+- This turbulent history has resulted in some of the more interesting features of JavaScript including...
   - The thriving open source community with extremely powerful tools (jQuery, Express, React, Babel etc).
   - Extremely powerful runtimes as a result of competition between browser makers.
   - Language details that seem odd (`==` and `===`).
   - Occasional browser inconsistencies.
   - Ambiguous syntax
 
-Note: Check out [Can I Use..](https://caniuse.com/) for detailed info on browser support of JS features.
+> Check out [Can I Use..](https://caniuse.com/) for detailed info on browser support of JS features.
 
-## Linking a JavaScript file (5 minutes / 0:30)
+## Visualization of JavaScript as a Language
+http://shaunlebron.github.io/solar-system-of-js/#0
 
-From the command line:
+## How JavaScript Develops
 
-```shell
-$ cd ~/wdi/sandbox
-$ mkdir js-data-types-and-control-flow
-$ cd js-data-types-and-control-flow
-$ touch index.html script.js
-$ atom .
-```
+http://2ality.com/2015/11/tc39-process.html
 
-Update the files as follows:
+## How the Browser Runs Javascript
 
-In index.html:
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>This is the Title</title>
-    <script src="script.js"></script>
-  </head>
-  <body>
-  </body>
-</html>
-```
-
-In script.js
-```js
-console.log("hello world")
-```
-
-Back at the command line run:
-```bash
-open index.html
-```
-
-Your default browser will open (we ask for this class you use Chrome but other browsers will have similar tools you should definitely explore).
-
-You can bring up the Development Tools (DevTools) with the command **Command + Ctrl + J** (`⌘ + ⌥ + J`) and should see:
-
-![DevTools Console says 'Hello World!'](https://user-images.githubusercontent.com/7882341/27314092-830ea8ac-553f-11e7-954f-c8502b382d6d.png)
-
-### Linking multiple scripts (5 minutes / 0:35)
-
-Again, back at the command line run:
-```bash
-touch script2.js
-```
-
-In script2.js add:
-```js
-console.log("hello world, from script2")
-```
-
-In index.html, in the head after the other script tag, add:
-```html
-...
-  <script src="script2.js"></script>
-...
-```
-
-Go back to the browser and refresh the page.
-
-**Bonus** [async and deferred attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
-
-## Developer Tools (10 minutes / 0:45)
-
-### `console.log`
-
-We have seen `console.log` frequently in the pre-work and we will see it much more.
-The most difficult aspect of programming is not having insight into the exact value of things in a running program.
-`console.log` provides us this insight.
-
-This console is also known as a REPL.
-
-![REPL 42](https://user-images.githubusercontent.com/7882341/27314489-4275c7b4-5542-11e7-8c16-6b6431f9cc42.png)
-
-This is a REPL.
-When you hit **Enter**, you tell the computer:
-
-1. **R**ead the JavaScript I just wrote (`42`).
-2. **E**valuate it (calculate its value, `42`).
-3. **P**rint the value that was evaluated (`42`).
-4. **L**oop, returning control to the user and wait to be asked to read the next line.
-
-```js
-const randomNum = Math.floor(Math.random() * 10)
-
-console.log(`The random number is ${randomNum}`)
-
-```
-
-```
-Arithmetic Operations
-  + : Addition
-  – : Subtraction
-  * : Multiplication
-  / : Division
-```
-
-#### Exercise
-
-1. Print out your name in the console.
-2. Print out the sum of 1 to 10.
-3. Type in the following code and explain how it works:
-```
-  console.log("I'm a " + "programmer");
-```
-4. Print whatever you want in the console. Tip: if you want to write multiline command, use Shift + Enter to change line.
-
-### `debugger` (5 minutes / 0:50)
-
-`debugger` is like a super powered `console.log`.
-Where `console.log` leaves us a little evidence about what's going on in the program execution, debugger puts the process on hold and lets us look at any part of the paused process.
-It then lets you walk through your script step by step.
-
-```js
-let greeting = "Hello"
-let subject = "World"
-debugger;
-let message = `${greeting}, ${subject}!`
-console.log(message)
-let messageParts = message.split(", ")
-```
-
-We don't actually need to have a `debugger` line and StandardJS doesn't like it.
-
-Instead we can set breakpoints directly through the developer tools.
-
-Much more information on debugging with Chrome Dev Tools is available [here](https://developers.google.com/web/tools/chrome-devtools/javascript/)
-
-## Linter (Optional)
-
-- Install [Linter](https://github.com/steelbrain/linter)
-- Install [linter-js-standard](https://github.com/ricardofbarros/linter-js-standard)
-- Install [atom-standard-formatter](https://github.com/stephenkubovic/atom-standard-formatter)
-- Install [standardjs-snippets](https://github.com/gaboesquivel/atom-standardjs-snippets)
-
-The errors we get in the linter might be confusing at first.
-There is a standard list of rules [here](https://standardjs.com/rules.html).
-The errors for the most part should be understandable plain English but if the meaning of an error isn't clear, google "Standard JS [Error Message Here]".
-
-To use the formatter press `ctrl-alt-f` and the formatter will correct any errors it can in your file.
+Ultimately, the browser is running your JavaScript. JavaScript relies on the browser environment for a lot of functionality.
 
 ## References
 
 - [W3C: A Short History of JavaScript](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)
+- [JavaScript: How It All Began](http://2ality.com/2011/03/javascript-how-it-all-began.html)
 - [Auth0: A Brief History of JavaScript](https://auth0.com/blog/a-brief-history-of-javascript/)
 - [Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [Standard JS](https://standardjs.com/)
-- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+- [TC39](http://2ality.com/2015/11/tc39-process.html)
