@@ -35,12 +35,12 @@ We use JavaScript when building web apps because it is the only language that ru
     - Brendan Eich prototypes the language then called Mocha in ten days.
 - **late 1995**: Mocha is released as a supported feature of the Netscape Browser under the name LiveScript
   - In the subsequent release of the Netscape Browser, LiveScript is regrettably renamed JavaScript in an effort to ride the coat tails of the heavily marketed Java.
-- **1996**: Microsoft reverse engineers JavaScript and releases JScript.
-  - Netscape submits JavaScript to Ecma International to publish a standard (ECMAScript-262)
+- **1996**: Microsoft reverse engineers JavaScript and releases [JScript](https://en.wikipedia.org/wiki/JScript).
+  - Netscape submits JavaScript to [Ecma International](https://en.wikipedia.org/wiki/Ecma_International) to publish a standard ([ECMAScript-262](https://en.wikipedia.org/wiki/ECMAScript))
 - **1998**: Netscape open-sources their browser and creates the Mozilla Project.
   - ECMAScript 2 Standard published.
 - **1999**: ECMAScript 3 standard published.
-- **2003**: ECMAScript 4 falls apart.
+- **2003**: [ECMAScript 4 falls apart.](https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_.28abandoned.29)
   - Apple releases Safari.
 - **2005-2009**: Lots of excitement but things keep falling apart.
   - Open source community works to address failings of the standards committees
@@ -62,15 +62,19 @@ We use JavaScript when building web apps because it is the only language that ru
 > Check out [Can I Use..](https://caniuse.com/) for detailed info on browser support of JS features.
 
 ## Visualization of JavaScript as a Language
+
 http://shaunlebron.github.io/solar-system-of-js/#0
 
 ## How JavaScript Develops
 
 http://2ality.com/2015/11/tc39-process.html
 
+https://github.com/tc39/proposals
+
 ## How the Browser Runs Javascript
 
-Ultimately, the browser is running your JavaScript. JavaScript relies on the browser environment for a lot of functionality.
+Ultimately, the browser is running your JavaScript. JavaScript runs on a host environment, and is run by a program called a JavaScript engine. [List of ECMAScript engines](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
+
 
 ## References
 
@@ -78,4 +82,4 @@ Ultimately, the browser is running your JavaScript. JavaScript relies on the bro
 - [JavaScript: How It All Began](http://2ality.com/2011/03/javascript-how-it-all-began.html)
 - [Auth0: A Brief History of JavaScript](https://auth0.com/blog/a-brief-history-of-javascript/)
 - [Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [TC39](http://2ality.com/2015/11/tc39-process.html)
+- [TC39 Process](http://2ality.com/2015/11/tc39-process.html)
